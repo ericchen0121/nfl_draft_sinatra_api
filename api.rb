@@ -1,8 +1,7 @@
 require 'sinatra'
-require 'json'
 require 'sinatra/activerecord'
-
-set :database, 'postgresql://SavvyMac@localhost/nfl_draft'
+require 'json'
+require './environments'
 
 class Player < ActiveRecord::Base
   belongs_to :team
