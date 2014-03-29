@@ -23,22 +23,42 @@ get '/' do
 end
 
 get '/players' do
-  Player.all.to_json
+  return_message = {}
+  players = Player.all
+  return_message[:players] = players
+
+  return_message.to_json
 end
 
 get '/player/:id' do
   # placeholder
-  Player.find(:first, params[:id]).to_json
+  return_message = {}
+  player = Player.find(params[:id])
+  return_message[:players] = [player]
+
+  return_message.to_json
 end
 
 get '/teams' do
-  Team.all.to_json
+  return_message = {}
+  teams = Team.all
+  return_message[:teams] = teams
+
+  return_message.to_json
 end
 
 get '/team/:id' do
-  Team.find(:first, params[:id]).to_json
+  return_message = {}
+  team = Team.find(params[:id])
+  return_message[:teams] = [team]
+
+  return_message.to_json
 end
 
 get '/team/:id/players' do
-  Team.find(params[:id]).players.to_json
+  return_message = {}
+  player = Team.find(params[:id]).players
+  return_message[:players] = [player]
+
+  return_message.to_json
 end
