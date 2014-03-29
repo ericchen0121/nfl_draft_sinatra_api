@@ -23,6 +23,8 @@ get '/' do
 end
 
 get '/players' do
+  content_type :json
+
   return_message = {}
   players = Player.all
   return_message[:players] = players
@@ -31,7 +33,8 @@ get '/players' do
 end
 
 get '/player/:id' do
-  # placeholder
+  content_type :json
+
   return_message = {}
   player = Player.find(params[:id])
   return_message[:players] = [player]
@@ -40,6 +43,8 @@ get '/player/:id' do
 end
 
 get '/teams' do
+  content_type :json
+
   return_message = {}
   teams = Team.all
   return_message[:teams] = teams
@@ -48,6 +53,8 @@ get '/teams' do
 end
 
 get '/team/:id' do
+  content_type :json
+
   return_message = {}
   team = Team.find(params[:id])
   return_message[:teams] = [team]
@@ -56,6 +63,8 @@ get '/team/:id' do
 end
 
 get '/team/:id/players' do
+  content_type :json
+
   return_message = {}
   player = Team.find(params[:id]).players
   return_message[:players] = [player]
