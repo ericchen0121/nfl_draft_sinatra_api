@@ -10,18 +10,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140328205901) do
+ActiveRecord::Schema.define(version: 20140401023105) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "author_versions", force: true do |t|
+    t.string   "author"
+    t.integer  "version"
+    t.datetime "date_published"
+    t.string   "url"
+    t.string   "company"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "mockdrafts", force: true do |t|
+    t.integer  "author_version_id"
+    t.integer  "player_id"
+    t.integer  "team_id"
+    t.integer  "overall_pick"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "players", force: true do |t|
-    t.string  "name"
-    t.integer "team_id"
+    t.string   "name"
+    t.string   "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "teams", force: true do |t|
-    t.string "name"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

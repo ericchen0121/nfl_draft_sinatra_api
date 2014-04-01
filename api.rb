@@ -1,15 +1,9 @@
 require 'sinatra'
 require 'sinatra/activerecord'
 require 'json'
+require './app/models/models' # created a models folder
 require './environments'
 
-class Player < ActiveRecord::Base
-  belongs_to :team
-end
-
-class Team < ActiveRecord::Base
-  has_many :players
-end
 
 get '/make' do
   team1 = Team.create(name: 'Baltimore Ravens')
