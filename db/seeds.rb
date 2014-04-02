@@ -16,6 +16,7 @@ TEAMS.each do |team|
   Team.find_or_create_by(name: team[0])
 end
 
+
 # ALL_AUTHOR_VERSIONS.each do |av|
 #   AuthorVersion.find_or_create_by(
 #     author: av[:author], 
@@ -64,193 +65,195 @@ MOCK_1.each_with_index do |pick, index|
   )
 end
 
-# AuthorVersion.find_or_create_by(
-#   author: AUTHOR_VERSION_2[:author], 
-#   version: AUTHOR_VERSION_2[:version],
-#   date_published: Date.parse(AUTHOR_VERSION_2[:date_published]),
-#   url: AUTHOR_VERSION_2[:url], 
-#   company: AUTHOR_VERSION_2[:company]
-# )
+AuthorVersion.find_or_create_by(
+  author: AUTHOR_VERSION_2[:author], 
+  version: AUTHOR_VERSION_2[:version],
+  date_published: Date.parse(AUTHOR_VERSION_2[:date_published]),
+  url: AUTHOR_VERSION_2[:url], 
+  company: AUTHOR_VERSION_2[:company]
+)
 
-# MOCK_2.each_with_index do |pick, index|
-#   Mockdrafts.find_or_create_by(
-#     author_version_id: '1',
-#     player_id: Player.find_by_name(pick[0]).id, 
-#     team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
-#     overall_pick: index + 1,
-#     commentary: pick[1]
-#   )
-# end
-# AuthorVersion.find_or_create_by(
-#   author: AUTHOR_VERSION_3[:author], 
-#   version: AUTHOR_VERSION_3[:version],
-#   date_published: Date.parse(AUTHOR_VERSION_3[:date_published]),
-#   url: AUTHOR_VERSION_3[:url], 
-#   company: AUTHOR_VERSION_3[:company]
-# )
+MOCK_2.each_with_index do |pick, index|
+  Mockdrafts.find_or_create_by(
+    author_version_id: '1',
+    player_id: Player.find_by_name(pick[0]).id, 
+    team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
+    overall_pick: index + 1,
+    commentary: pick[1]
+  )
+end
 
-# MOCK_3.each_with_index do |pick, index|
-#   Mockdrafts.find_or_create_by(
-#     author_version_id: '1',
-#     player_id: Player.find_by_name(pick[0]).id, 
-#     team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
-#     overall_pick: index + 1,
-#     commentary: pick[1]
-#   )
-# end
-# AuthorVersion.find_or_create_by(
-#   author: AUTHOR_VERSION_4[:author], 
-#   version: AUTHOR_VERSION_4[:version],
-#   date_published: Date.parse(AUTHOR_VERSION_4[:date_published]),
-#   url: AUTHOR_VERSION_4[:url], 
-#   company: AUTHOR_VERSION_4[:company]
-# )
 
-# MOCK_4.each_with_index do |pick, index|
-#   Mockdrafts.find_or_create_by(
-#     author_version_id: '1',
-#     player_id: Player.find_by_name(pick[0]).id, 
-#     team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
-#     overall_pick: index + 1,
-#     commentary: pick[1]
-#   )
-# end
-# AuthorVersion.find_or_create_by(
-#   author: AUTHOR_VERSION_5[:author], 
-#   version: AUTHOR_VERSION_5[:version],
-#   date_published: Date.parse(AUTHOR_VERSION_5[:date_published]),
-#   url: AUTHOR_VERSION_5[:url], 
-#   company: AUTHOR_VERSION_5[:company]
-# )
+AuthorVersion.find_or_create_by(
+  author: AUTHOR_VERSION_3[:author], 
+  version: AUTHOR_VERSION_3[:version],
+  date_published: Date.parse(AUTHOR_VERSION_3[:date_published]),
+  url: AUTHOR_VERSION_3[:url], 
+  company: AUTHOR_VERSION_3[:company]
+)
 
-# MOCK_5.each_with_index do |pick, index|
-#   Mockdrafts.find_or_create_by(
-#     author_version_id: '1',
-#     player_id: Player.find_by_name(pick[0]).id, 
-#     team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
-#     overall_pick: index + 1,
-#     commentary: pick[1]
-#   )
-# end
-# AuthorVersion.find_or_create_by(
-#   author: AUTHOR_VERSION_6[:author], 
-#   version: AUTHOR_VERSION_6[:version],
-#   date_published: Date.parse(AUTHOR_VERSION_6[:date_published]),
-#   url: AUTHOR_VERSION_6[:url], 
-#   company: AUTHOR_VERSION_6[:company]
-# )
+MOCK_3.each_with_index do |pick, index|
+  Mockdrafts.find_or_create_by(
+    author_version_id: '1',
+    player_id: Player.find_by_name(pick[0]).id, 
+    team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
+    overall_pick: index + 1,
+    commentary: pick[1]
+  )
+end
+AuthorVersion.find_or_create_by(
+  author: AUTHOR_VERSION_4[:author], 
+  version: AUTHOR_VERSION_4[:version],
+  date_published: Date.parse(AUTHOR_VERSION_4[:date_published]),
+  url: AUTHOR_VERSION_4[:url], 
+  company: AUTHOR_VERSION_4[:company]
+)
 
-# MOCK_6.each_with_index do |pick, index|
-#   Mockdrafts.find_or_create_by(
-#     author_version_id: '1',
-#     player_id: Player.find_by_name(pick[0]).id, 
-#     team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
-#     overall_pick: index + 1,
-#     commentary: pick[1]
-#   )
-# end
-# AuthorVersion.find_or_create_by(
-#   author: AUTHOR_VERSION_7[:author], 
-#   version: AUTHOR_VERSION_7[:version],
-#   date_published: Date.parse(AUTHOR_VERSION_7[:date_published]),
-#   url: AUTHOR_VERSION_7[:url], 
-#   company: AUTHOR_VERSION_7[:company]
-# )
+MOCK_4.each_with_index do |pick, index|
+  Mockdrafts.find_or_create_by(
+    author_version_id: '1',
+    player_id: Player.find_by_name(pick[0]).id, 
+    team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
+    overall_pick: index + 1,
+    commentary: pick[1]
+  )
+end
+AuthorVersion.find_or_create_by(
+  author: AUTHOR_VERSION_5[:author], 
+  version: AUTHOR_VERSION_5[:version],
+  date_published: Date.parse(AUTHOR_VERSION_5[:date_published]),
+  url: AUTHOR_VERSION_5[:url], 
+  company: AUTHOR_VERSION_5[:company]
+)
 
-# MOCK_7.each_with_index do |pick, index|
-#   Mockdrafts.find_or_create_by(
-#     author_version_id: '1',
-#     player_id: Player.find_by_name(pick[0]).id, 
-#     team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
-#     overall_pick: index + 1,
-#     commentary: pick[1]
-#   )
-# end
-# AuthorVersion.find_or_create_by(
-#   author: AUTHOR_VERSION_8[:author], 
-#   version: AUTHOR_VERSION_8[:version],
-#   date_published: Date.parse(AUTHOR_VERSION_8[:date_published]),
-#   url: AUTHOR_VERSION_8[:url], 
-#   company: AUTHOR_VERSION_8[:company]
-# )
+MOCK_5.each_with_index do |pick, index|
+  Mockdrafts.find_or_create_by(
+    author_version_id: '1',
+    player_id: Player.find_by_name(pick[0]).id, 
+    team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
+    overall_pick: index + 1,
+    commentary: pick[1]
+  )
+end
+AuthorVersion.find_or_create_by(
+  author: AUTHOR_VERSION_6[:author], 
+  version: AUTHOR_VERSION_6[:version],
+  date_published: Date.parse(AUTHOR_VERSION_6[:date_published]),
+  url: AUTHOR_VERSION_6[:url], 
+  company: AUTHOR_VERSION_6[:company]
+)
 
-# MOCK_8.each_with_index do |pick, index|
-#   Mockdrafts.find_or_create_by(
-#     author_version_id: '1',
-#     player_id: Player.find_by_name(pick[0]).id, 
-#     team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
-#     overall_pick: index + 1,
-#     commentary: pick[1]
-#   )
-# end
-# AuthorVersion.find_or_create_by(
-#   author: AUTHOR_VERSION_9[:author], 
-#   version: AUTHOR_VERSION_9[:version],
-#   date_published: Date.parse(AUTHOR_VERSION_9[:date_published]),
-#   url: AUTHOR_VERSION_9[:url], 
-#   company: AUTHOR_VERSION_9[:company]
-# )
+MOCK_6.each_with_index do |pick, index|
+  Mockdrafts.find_or_create_by(
+    author_version_id: '1',
+    player_id: Player.find_by_name(pick[0]).id, 
+    team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
+    overall_pick: index + 1,
+    commentary: pick[1]
+  )
+end
+AuthorVersion.find_or_create_by(
+  author: AUTHOR_VERSION_7[:author], 
+  version: AUTHOR_VERSION_7[:version],
+  date_published: Date.parse(AUTHOR_VERSION_7[:date_published]),
+  url: AUTHOR_VERSION_7[:url], 
+  company: AUTHOR_VERSION_7[:company]
+)
 
-# MOCK_9.each_with_index do |pick, index|
-#   Mockdrafts.find_or_create_by(
-#     author_version_id: '1',
-#     player_id: Player.find_by_name(pick[0]).id, 
-#     team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
-#     overall_pick: index + 1,
-#     commentary: pick[1]
-#   )
-# end
-# AuthorVersion.find_or_create_by(
-#   author: AUTHOR_VERSION_10[:author], 
-#   version: AUTHOR_VERSION_10[:version],
-#   date_published: Date.parse(AUTHOR_VERSION_10[:date_published]),
-#   url: AUTHOR_VERSION_10[:url], 
-#   company: AUTHOR_VERSION_10[:company]
-# )
+MOCK_7.each_with_index do |pick, index|
+  Mockdrafts.find_or_create_by(
+    author_version_id: '1',
+    player_id: Player.find_by_name(pick[0]).id, 
+    team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
+    overall_pick: index + 1,
+    commentary: pick[1]
+  )
+end
+AuthorVersion.find_or_create_by(
+  author: AUTHOR_VERSION_8[:author], 
+  version: AUTHOR_VERSION_8[:version],
+  date_published: Date.parse(AUTHOR_VERSION_8[:date_published]),
+  url: AUTHOR_VERSION_8[:url], 
+  company: AUTHOR_VERSION_8[:company]
+)
 
-# MOCK_10.each_with_index do |pick, index|
-#   Mockdrafts.find_or_create_by(
-#     author_version_id: '1',
-#     player_id: Player.find_by_name(pick[0]).id, 
-#     team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
-#     overall_pick: index + 1,
-#     commentary: pick[1]
-#   )
-# end
+MOCK_8.each_with_index do |pick, index|
+  Mockdrafts.find_or_create_by(
+    author_version_id: '1',
+    player_id: Player.find_by_name(pick[0]).id, 
+    team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
+    overall_pick: index + 1,
+    commentary: pick[1]
+  )
+end
+AuthorVersion.find_or_create_by(
+  author: AUTHOR_VERSION_9[:author], 
+  version: AUTHOR_VERSION_9[:version],
+  date_published: Date.parse(AUTHOR_VERSION_9[:date_published]),
+  url: AUTHOR_VERSION_9[:url], 
+  company: AUTHOR_VERSION_9[:company]
+)
 
-# AuthorVersion.find_or_create_by(
-#   author: AUTHOR_VERSION_11[:author], 
-#   version: AUTHOR_VERSION_11[:version],
-#   date_published: Date.parse(AUTHOR_VERSION_11[:date_published]),
-#   url: AUTHOR_VERSION_11[:url], 
-#   company: AUTHOR_VERSION_11[:company]
-# )
+MOCK_9.each_with_index do |pick, index|
+  Mockdrafts.find_or_create_by(
+    author_version_id: '1',
+    player_id: Player.find_by_name(pick[0]).id, 
+    team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
+    overall_pick: index + 1,
+    commentary: pick[1]
+  )
+end
+AuthorVersion.find_or_create_by(
+  author: AUTHOR_VERSION_10[:author], 
+  version: AUTHOR_VERSION_10[:version],
+  date_published: Date.parse(AUTHOR_VERSION_10[:date_published]),
+  url: AUTHOR_VERSION_10[:url], 
+  company: AUTHOR_VERSION_10[:company]
+)
 
-# MOCK_11.each_with_index do |pick, index|
-#   Mockdrafts.find_or_create_by(
-#     author_version_id: '1',
-#     player_id: Player.find_by_name(pick[0]).id, 
-#     team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
-#     overall_pick: index + 1,
-#     commentary: pick[1]
-#   )
-# end
+MOCK_10.each_with_index do |pick, index|
+  Mockdrafts.find_or_create_by(
+    author_version_id: '1',
+    player_id: Player.find_by_name(pick[0]).id, 
+    team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
+    overall_pick: index + 1,
+    commentary: pick[1]
+  )
+end
 
-# AuthorVersion.find_or_create_by(
-#   author: AUTHOR_VERSION_12[:author], 
-#   version: AUTHOR_VERSION_12[:version],
-#   date_published: Date.parse(AUTHOR_VERSION_12[:date_published]),
-#   url: AUTHOR_VERSION_12[:url], 
-#   company: AUTHOR_VERSION_12[:company]
-# )
+AuthorVersion.find_or_create_by(
+  author: AUTHOR_VERSION_11[:author], 
+  version: AUTHOR_VERSION_11[:version],
+  date_published: Date.parse(AUTHOR_VERSION_11[:date_published]),
+  url: AUTHOR_VERSION_11[:url], 
+  company: AUTHOR_VERSION_11[:company]
+)
 
-# MOCK_12.each_with_index do |pick, index|
-#   Mockdrafts.find_or_create_by(
-#     author_version_id: '1',
-#     player_id: Player.find_by_name(pick[0]).id, 
-#     team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
-#     overall_pick: index + 1,
-#     commentary: pick[1]
-#   )
-# end
+MOCK_11.each_with_index do |pick, index|
+  Mockdrafts.find_or_create_by(
+    author_version_id: '1',
+    player_id: Player.find_by_name(pick[0]).id, 
+    team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
+    overall_pick: index + 1,
+    commentary: pick[1]
+  )
+end
+
+AuthorVersion.find_or_create_by(
+  author: AUTHOR_VERSION_12[:author], 
+  version: AUTHOR_VERSION_12[:version],
+  date_published: Date.parse(AUTHOR_VERSION_12[:date_published]),
+  url: AUTHOR_VERSION_12[:url], 
+  company: AUTHOR_VERSION_12[:company]
+)
+
+MOCK_12.each_with_index do |pick, index|
+  Mockdrafts.find_or_create_by(
+    author_version_id: '1',
+    player_id: Player.find_by_name(pick[0]).id, 
+    team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
+    overall_pick: index + 1,
+    commentary: pick[1]
+  )
+end
 
