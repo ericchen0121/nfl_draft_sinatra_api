@@ -3,7 +3,7 @@
 
 require_relative 'seeds_players'
 require_relative 'seeds_teams'
-# require_relative 'seeds_mocks'
+require_relative 'seeds_mocks'
 require_relative 'seeds_authors'
 require_relative 'seeds_draftorder'
 
@@ -45,24 +45,24 @@ end
 #   (p.send "AUTHOR_VERSION_#{num}")[:author]
 
 # Working version!!
-# # 
-# AuthorVersion.find_or_create_by(
-#   author: AUTHOR_VERSION_1[:author], 
-#   version: AUTHOR_VERSION_1[:version],
-#   date_published: Date.parse(AUTHOR_VERSION_1[:date_published]),
-#   url: AUTHOR_VERSION_1[:url], 
-#   company: AUTHOR_VERSION_1[:company]
-# )
 
-# MOCK_1.each_with_index do |pick, index|
-#   Mockdrafts.find_or_create_by(
-#     author_version_id: '1',
-#     player_id: Player.find_by_name(pick[0]).id, 
-#     team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
-#     overall_pick: index + 1,
-#     commentary: pick[1]
-#   )
-# end
+AuthorVersion.find_or_create_by(
+  author: AUTHOR_VERSION_1[:author], 
+  version: AUTHOR_VERSION_1[:version],
+  date_published: Date.parse(AUTHOR_VERSION_1[:date_published]),
+  url: AUTHOR_VERSION_1[:url], 
+  company: AUTHOR_VERSION_1[:company]
+)
+
+MOCK_1.each_with_index do |pick, index|
+  Mockdrafts.find_or_create_by(
+    author_version_id: '1',
+    player_id: Player.find_by_name(pick[0]).id, 
+    team_id: Team.where("name like ?", "%#{DRAFT_ORDER[index]}%").first.id,
+    overall_pick: index + 1,
+    commentary: pick[1]
+  )
+end
 
 # AuthorVersion.find_or_create_by(
 #   author: AUTHOR_VERSION_2[:author], 

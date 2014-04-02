@@ -29,5 +29,4 @@ DRAFT_ORDER = [ 'Texans',
   'Patriots',
   '49ers',
   'Broncos',
-  'Seahawks'
-]
+  'Seahawks']
