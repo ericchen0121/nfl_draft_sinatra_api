@@ -62,8 +62,7 @@ MOCK_2 = [["Jadeveon Clowney", "Clowney's lack of production this season is a co
 ["Ra'Shede Hageman", "Hagemen was expected to put on a show at the combine and he didn't disappoint."],
 ["Louis Nix", "The 49ers need to add more depth along the defensive line and Nix has the ability to develop into a three-down player."],
 ["Kony Ealy", "Ealy ran slower than expected but he plays much faster on tape and his versatility is very appealing."],
-["Kelvin Benjamin", "Benjamin would be an outstanding red-zone target for Russell Wilson."]
-]
+["Kelvin Benjamin", "Benjamin would be an outstanding red-zone target for Russell Wilson."]]
 
 MOCK_3 = [["Jadeveon Clowney", "Blake Bortles fits the Bill O'Brien quarterback profile but passing on Clowney will prove to be difficult."],
 ["Greg Robinson", "Robinson will provide a physical presence in the run game and he has the tools to be a dominant pass protector."],
@@ -96,8 +95,7 @@ MOCK_3 = [["Jadeveon Clowney", "Blake Bortles fits the Bill O'Brien quarterback 
 ["Jace Amaro", "Amaro could put up monster numbers playing in this offense."],
 ["Bradley Roby", "Roby is an explosive, fluid athlete that would fit nicely in the 49ers’ secondary."],
 ["Jarvis Landry", "Landry won’t run a fast 40-time, but he’s a savvy route-runner with outstanding toughness and ball skills."],
-["Stephon Tuitt", "The Seahawks have a very deep roster and that will allow them to take the best available player."]
-]
+["Stephon Tuitt", "The Seahawks have a very deep roster and that will allow them to take the best available player."]]
 
 MOCK_4 = [["Jadeveon Clowney", "Bill O'Brien doesn't see much difference between the first and second tier of quarterbacks, leading him to take the best available player in the draft."],
 ["Jake Matthews", "Jake Long's injury prompts Fisher to add insurance to an offensive line that needs to handle the formidable frontlines in the NFC West."],
@@ -130,8 +128,7 @@ MOCK_4 = [["Jadeveon Clowney", "Bill O'Brien doesn't see much difference between
 ["Louis Nix", "The Patriots are notorious for trading away picks, so this could be the landing point for one of the top three quarterbacks. If not, Nix is a viable option with Vince Wilfork chirping about a possible release."],
 ["Brandin Cooks", "The 49ers have a pair of big-bodied pass catchers in Michael Crabtree and Anquan Boldin, but the receiving corps needs an explosive slot receiver to add diversity to the unit. Cooks is the most polished receiver in the 2014 class, with a game that fits in nicely with the 49ers' scheme."],
 ["Travis Swanson", "The Broncos have won the free-agency sweepstakes by all accounts, but the team still needs to tweak the offensive line. Swanson is a smart pivot with superb skills and instincts."],
-["Kelvin Benjamin", "The loss of Sidney Rice and Golden Tate leaves a void in the Seahawks' receiving corps. Benjamin is a big, athletic pass catcher with the potential to wreak havoc in the red zone."]
-]
+["Kelvin Benjamin", "The loss of Sidney Rice and Golden Tate leaves a void in the Seahawks' receiving corps. Benjamin is a big, athletic pass catcher with the potential to wreak havoc in the red zone."]]
 
 MOCK_5 = [["Jadeveon Clowney", "Coach Bill O'Brien could certainly opt for a quarterback at the top spot, but passing on a mercurial talent like Clowney could be hard to justify down the road."],
 ["Jake Matthews", "Questions about Matthews' overall athleticism could prompt the Rams to take Greg Robinson at this pick. However, coach Jeff Fisher's relationship with Bruce Matthews could sway the Rams in this direction."],
@@ -164,8 +161,7 @@ MOCK_5 = [["Jadeveon Clowney", "Coach Bill O'Brien could certainly opt for a qua
 ["Jace Amaro", "It's critical to give Tom Brady a few more weapons on the perimeter to make a legitimate run at the Super Bowl. Amaro is a sneaky athletic tight end with strong hands and outstanding ball skills."],
 ["Ra'Shede Hageman", "The 49ers would love to pair Aldon Smith with a young athletic defender with exceptional size and length. Hageman has been a bit of an underachiever at Minnesota, but his natural talent is undeniable."],
 ["C.J. Mosley", "John Elway will look to remake the Broncos defense with an emphasis on young, athletic playmakers. Mosley is a versatile linebacker capable of staying on the field in every situation."],
-["David Yankey", "The presence of a dominant running game sets the table for Russell Wilson and company. Yankey is a powerful run blocker at the point of attack, yet also shows the at[hleticism to execute pulls and traps on the move."]
-]
+["David Yankey", "The presence of a dominant running game sets the table for Russell Wilson and company. Yankey is a powerful run blocker at the point of attack, yet also shows the at[hleticism to execute pulls and traps on the move."]]
 
 MOCK_6 = [["Jadeveon Clowney", "A QB gets strong consideration, but Texans opt for top QB disrupter."],
 ["Sammy Watkins", "The most dynamic offensive playmaker in the draft pumps up the Rams' attack."],
@@ -231,8 +227,7 @@ MOCK_7 = [["Blake Bortles", "Did everything at the combine to show that he's wil
 ["Jace Amaro", "A disappointing combine, but his game tape shows he can play. His pro day will be much better, I'm sure."],
 ["Odell Beckham", "Dazzled in Indy, so much so that the 49ers might pass up the bigger body in Florida State WR Kelvin Benjamin."],
 ["Jason Verrett", "Ran 4.38 in the 40-yard dash, had a vertical jump of 39 inches and had the best footwork of the cornerbacks in Indy. I am not worried about his size."],
-["Brandin Cooks", "His 4.33 40-yard dash got everyone's attention. So did his good routes, and sure hands during field drills."]
-]
+["Brandin Cooks", "His 4.33 40-yard dash got everyone's attention. So did his good routes, and sure hands during field drills."]]
 
 MOCK_8 = [["Jadeveon Clowney", "If a QB is taken here, expect it to be UCF's Blake Bortles."],
 ["Jake Matthews", "There's uncertainty over LT Jake Long's recovery, and a need to protect QB Sam Bradford."],
@@ -265,8 +260,7 @@ MOCK_8 = [["Jadeveon Clowney", "If a QB is taken here, expect it to be UCF's Bla
 ["Aaron Donald", "Popular thought is a TE selection here, but when have the Pats been conventional?"],
 ["Kelvin Benjamin", "Back to the WR well for the Niners. Benjamin is a youngster that can be groomed."],
 ["Jason Verrett", "Many battles will be had in draft rooms about his size, but he's a real ballhawk that makes a ton of plays."],
-["Allen Robinson", "Sidney Rice and Golden Tate could be gone, but the former Nittany Lion has exceptional ball skills ."]
-]
+["Allen Robinson", "Sidney Rice and Golden Tate could be gone, but the former Nittany Lion has exceptional ball skills ."]]
 
 MOCK_9 = [["Teddy Bridgewater", "A very fluid pick here for the Texans. This is not set in stone."],
 ["Jake Matthews", "Sam Bradford is the Rams' QB. They have to protect him."],
@@ -299,8 +293,7 @@ MOCK_9 = [["Teddy Bridgewater", "A very fluid pick here for the Texans. This is 
 ["Austin Seferian-Jenkins", "It was a somewhat disappointing season for him, but a good pre-draft circuit puts him back on the map."],
 ["Timmy Jernigan", "Jernigan would give the 49ers another good player to fortify a dynamic defense."],
 ["Jason Verrett", "Verrett's size will give them pause, but his playmaking is exceptional."],
-["Allen Robinson", "Robinson is underrated nationally, but he is a good route runner with tremendous ball skills."]
-]
+["Allen Robinson", "Robinson is underrated nationally, but he is a good route runner with tremendous ball skills."]]
 
 MOCK_10 = [["Jadeveon Clowney", ""],
 ["Sammy Watkins", ""],

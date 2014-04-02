@@ -16,7 +16,6 @@ TEAMS.each do |team|
   Team.find_or_create_by(name: team[0])
 end
 
-
 # ALL_AUTHOR_VERSIONS.each do |av|
 #   AuthorVersion.find_or_create_by(
 #     author: av[:author], 
