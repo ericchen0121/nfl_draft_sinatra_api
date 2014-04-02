@@ -25,7 +25,7 @@ class CreateMockDrafts < ActiveRecord::Migration
       t.timestamps
     end
 
-    create_table :mockdraft do |t|
+    create_table :mockdrafts do |t|
       t.references :author_version
       t.references :player
       t.references :team
