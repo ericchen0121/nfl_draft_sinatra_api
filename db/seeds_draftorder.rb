@@ -1,5 +1,4 @@
-DRAFT_ORDER =
-[ 'Texans',
+DRAFT_ORDER = [ 'Texans',
   'Rams',
   'Jaguars', 
   'Browns', 

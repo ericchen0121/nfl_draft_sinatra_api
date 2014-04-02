@@ -3,7 +3,7 @@
 
 require_relative 'seeds_players'
 require_relative 'seeds_teams'
-require_relative 'seeds_mocks'
+# require_relative 'seeds_mocks'
 require_relative 'seeds_authors'
 require_relative 'seeds_draftorder'
 

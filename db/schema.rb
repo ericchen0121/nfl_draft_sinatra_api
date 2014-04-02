@@ -30,9 +30,9 @@ ActiveRecord::Schema.define(version: 20140402010158) do
     t.integer  "player_id"
     t.integer  "team_id"
     t.integer  "overall_pick"
+    t.text     "commentary"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "commentary"
   end
 
   create_table "players", force: true do |t|

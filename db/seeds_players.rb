@@ -1,5 +1,4 @@
-PLAYERS = 
-[['Jadeveon Clowney', 'DE'],
+PLAYERS = [['Jadeveon Clowney', 'DE'],
 ['Greg Robinson', 'OT'],
 ['Blake Bortles', 'QB'],
 ['Sammy Watkins', 'WR'],
