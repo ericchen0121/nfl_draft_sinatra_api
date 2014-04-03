@@ -1,13 +1,13 @@
 class Player < ActiveRecord::Base
   has_many :mockdrafts
-  # has_many :teams, through: :mockdrafts
-  # has_many :author_versions, through: :mockdrafts
+  has_many :teams #, through: :mockdrafts
+  has_many :author_versions, through: :mockdrafts
 end
 
 class Team < ActiveRecord::Base
   has_many :mockdrafts
-  # has_many :players, through: :mockdrafts
-  # has_many :author_versions, through: :mockdrafts
+  has_many :players #, through: :mockdrafts
+  has_many :author_versions, through: :mockdrafts
 end
 
 class Mockdrafts < ActiveRecord::Base
