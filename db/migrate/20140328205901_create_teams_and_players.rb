@@ -1,3 +1,4 @@
+#encoding: utf-8
 class CreateTeamsAndPlayers < ActiveRecord::Migration
   def change
     create_table :teams do |t|

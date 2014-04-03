@@ -6,10 +6,10 @@ require './environments'
 
 
 get '/make' do
-  team1 = Team.create(name: 'Baltimore Ravens')
-  team2 = Team.create(name: 'San Francisco 49ers')
-  Player.create(name: 'Marquise Lee', team_id: team1.id)
-  Player.create(name: 'Kelvin Benjamin', team_id: team2.id)
+  # team1 = Team.create(name: 'Baltimore Ravens')
+  # team2 = Team.create(name: 'San Francisco 49ers')
+  # Player.create(name: 'Marquise Lee', team_id: team1.id)
+  # Player.create(name: 'Kelvin Benjamin', team_id: team2.id)
 end
 
 get '/' do 
