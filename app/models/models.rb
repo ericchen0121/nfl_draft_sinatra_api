@@ -16,6 +16,8 @@ class Mockdrafts < ActiveRecord::Base
   belongs_to :author_version
 end
 
-class AuthorVersion <ActiveRecord::Base
+class AuthorVersion < ActiveRecord::Base
   has_many :mockdrafts
 end
+
+class DraftOrder < ActiveRecord::Base
