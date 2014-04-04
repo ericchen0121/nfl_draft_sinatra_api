@@ -13,9 +13,14 @@ PLAYERS.each do |player|
 end
 
 TEAMS.each do |team|
-  Team.find_or_create_by(name: team[0])
+  Team.find_or_create_by(name: team[0], division: team[1])
 end
 
+DRAFT_PICKS.each do |pick|
+  # this assumes Array and particular order for seeding.
+  # prob best practice to put it in an Array of Hashes to mitigate any errors
+  DraftPick.find_or_create_by(team_id: Team.where("name like ?", "#{pick[0]}%"), overall_pick: pick[1], round: pick[2], round_pick: pick[3], compensatory: pick[4])
+end
 
 # ALL_AUTHOR_VERSIONS.each do |av|
 #   AuthorVersion.find_or_create_by(
