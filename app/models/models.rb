@@ -21,6 +21,6 @@ class AuthorVersion < ActiveRecord::Base
   has_many :mockdrafts
 end
 
-class DraftPick< ActiveRecord::Base
+class DraftPick < ActiveRecord::Base
   belongs_to :team
 end

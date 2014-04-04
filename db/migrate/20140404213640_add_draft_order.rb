@@ -1,4 +1,4 @@
-class AddDraftPick < ActiveRecord::Migration
+class AddDraftOrder < ActiveRecord::Migration
   def change
     create_table :draft_picks do |t|
       t.references :team_id
