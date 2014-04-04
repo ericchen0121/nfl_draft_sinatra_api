@@ -5,6 +5,7 @@ class AddDraftPick < ActiveRecord::Migration
       t.integer :overall_pick
       t.integer :round
       t.integer :round_pick
+      t.integer :point_value
       t.boolean :compensatory
 
       t.timestamps

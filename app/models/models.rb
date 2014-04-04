@@ -8,6 +8,7 @@ class Team < ActiveRecord::Base
   has_many :mockdrafts
   has_many :players #, through: :mockdrafts
   has_many :author_versions, through: :mockdrafts
+  has_many :draft_picks
 end
 
 class Mockdrafts < ActiveRecord::Base
@@ -20,4 +21,6 @@ class AuthorVersion < ActiveRecord::Base
   has_many :mockdrafts
 end
 
-class DraftOrder < ActiveRecord::Base
+class DraftPick< ActiveRecord::Base
+  belongs_to :team
+end
