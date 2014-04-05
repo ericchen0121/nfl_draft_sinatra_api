@@ -6,7 +6,7 @@ require_relative 'seeds_teams'
 require_relative 'seeds_mocks'
 require_relative 'seeds_authors'
 require_relative 'seeds_draftorder'
-
+require_relative 'seeds_draft_picks'
 
 PLAYERS.each do |player|
   Player.find_or_create_by(name: player[0], position: player[1])
@@ -19,7 +19,7 @@ end
 DRAFT_PICKS.each do |pick|
   # this assumes Array and particular order for seeding.
   # prob best practice to put it in an Array of Hashes to mitigate any errors
-  DraftPick.find_or_create_by(team_id: Team.where("name like ?", "#{pick[0]}%"), overall_pick: pick[1], round: pick[2], round_pick: pick[3], compensatory: pick[4])
+  DraftPick.find_or_create_by(team_id: Team.where("name like ?", "#{pick[0]}%"), overall_pick: pick[1], round: pick[2], round_pick: pick[3], point_value: pick[4], compensatory: pick[5], trade: pick[6])
 end
 
 # ALL_AUTHOR_VERSIONS.each do |av|
