@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140402010158) do
+ActiveRecord::Schema.define(version: 20140404235507) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,18 @@ ActiveRecord::Schema.define(version: 20140402010158) do
     t.string   "company"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "draft_picks", force: true do |t|
+    t.integer  "overall_pick"
+    t.integer  "round"
+    t.integer  "round_pick"
+    t.float    "point_value"
+    t.boolean  "compensatory"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "team_id"
+    t.boolean  "trade"
   end
 
   create_table "mockdrafts", force: true do |t|
@@ -46,6 +58,7 @@ ActiveRecord::Schema.define(version: 20140402010158) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "division"
   end
 
 end

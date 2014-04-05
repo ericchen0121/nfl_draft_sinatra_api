@@ -15,3 +15,5 @@ end
 group :production, :development do
   gem 'pg'
 end
+
+# gem "pro_motion_slide_menu"
