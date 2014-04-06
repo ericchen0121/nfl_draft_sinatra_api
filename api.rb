@@ -58,7 +58,7 @@ get '/team/:id' do
   return_message.to_json
 end
 
-get '/team/:id/players' do
+get '/round/:id/teams' do
   content_type :json
 
   return_message = {}
